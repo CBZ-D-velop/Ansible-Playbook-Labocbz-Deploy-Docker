@@ -2,7 +2,7 @@ galaxy_info:
   author: "Lord Robin Crombez"
   namespace: "labocbz"
   role_name: "deploy_docker"
-  description: "This is a limited description for the meta."
+  description: "An Ansible playbook to install and configure Docker, docker-compose and other tools on a server based on Debian/Ubuntu."
   company: "Labo-CBZ"
 
   # If the issue tracker for your role is not on github, uncomment the
