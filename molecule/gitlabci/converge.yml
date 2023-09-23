@@ -1,0 +1,5 @@
+---
+- name: "Include labocbz.deploy_docker playbook"
+  tags:
+      - "labocbz.deploy_docker"
+  ansible.builtin.import_playbook: "../../playbook.yml"
