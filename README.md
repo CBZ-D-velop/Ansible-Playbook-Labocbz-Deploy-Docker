@@ -11,8 +11,29 @@
 ## Description
 
 ![Tag: UNIX](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: Ansible](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: Debian](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: Ubuntu](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: Bootstrap](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: Docker](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: docker-compose](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: portainer](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: watchtower](https://img.shields.io/badge/Tech-UNIX-orange)
 
-This is a limited description for the meta.
+An Ansible playbook to install and configure Docker, docker-compose and other tools on a server based on Debian/Ubuntu.
+
+This Ansible playbook streamlines the deployment of essential containerization tools: Docker, Docker Compose, Portainer, and Watchtower. Containerization has become a fundamental technology in modern IT environments, enabling efficient software deployment, scaling, and management.
+
+The playbook leverages predefined roles to simplify the installation and configuration of these tools. Here's what each tool brings to the table:
+
+1. **Docker:** Docker is a leading containerization platform that allows you to package and distribute applications as containers. It provides a consistent environment for applications, making it easier to manage dependencies and isolate processes.
+2. **Docker Compose:** Docker Compose simplifies multi-container application orchestration. You can define complex application stacks in a single YAML file, making it easier to manage and scale multi-container applications.
+3. **Portainer:** Portainer is a user-friendly Docker management interface that simplifies container management tasks. It offers a web-based dashboard, making it easier to visualize and manage containers, networks, and volumes.
+4. **Watchtower:** Watchtower is an automated update tool for Docker containers. It continuously monitors your Docker containers and updates them with the latest versions when they become available, helping you maintain the security and stability of your containerized applications.
+
+This playbook allows you to customize the deployment of these tools according to your specific requirements. Whether you're building a microservices architecture, managing a containerized application stack, or simply looking for efficient ways to work with containers, this playbook streamlines the process.
+
+By using Ansible with this playbook, you ensure consistent and efficient deployment of Docker, Docker Compose, Portainer, and Watchtower across your infrastructure. It simplifies the setup and maintenance of containerized applications, promoting better scalability, security, and management.
 
 ## Deployment diagramm
 
@@ -70,13 +91,14 @@ To install this playbook, just copy/import this playbook or raw file into your f
 ```YAML
 # From inventory
 ---
-all vars from to put/from your inventory
+# all vars from to put/from your inventory
+# see tests/inventory/group_var for all groups and vars.
 ```
 
 ```YAML
 # From AWX / Tower
 ---
-all vars from to put/from AWX / Tower
+tower_env: "local"
 ```
 
 ## Architectural Decisions Records
@@ -86,6 +108,8 @@ Here you can put your change to keep a trace of your work and decisions.
 ### 2023-09-23: First Init
 
 * First init of this playbook with the bootstrap_playbook playbook by Lord Robin Crombez
+* Playbook install Docker, docker-compose
+* Portainer and Watchtower can be installed, or not
 
 ## Authors
 
@@ -95,3 +119,4 @@ Here you can put your change to keep a trace of your work and decisions.
 
 * [Ansible playbook documentation](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_playbooks.html)
 * [Ansible Molecule documentation](https://molecule.readthedocs.io/)
+* [labocbz.install_docker](https://github.com/CBZ-D-velop/Ansible-Role-Labocbz-Install-Docker.git)
