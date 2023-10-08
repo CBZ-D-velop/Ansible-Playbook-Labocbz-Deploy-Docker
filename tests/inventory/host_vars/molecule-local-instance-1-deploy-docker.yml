@@ -48,4 +48,3 @@ inv_install_docker_watchtower_cleanup: true
 inv_install_docker_watchtower_include_restarting: true
 inv_install_docker_watchtower_include_stopped: true
 inv_install_docker_watchtower_no_restart: true
-
