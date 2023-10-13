@@ -1,6 +1,6 @@
 ---
 - name: "Deploy Docker"
-  hosts: "{{ tower_env | default([]) }}:&DOCKER"
+  hosts: "{{ tower_env | default([]) }}"
   gather_facts: true
   strategy: free
   become: true
