@@ -118,6 +118,11 @@ Here you can put your change to keep a trace of your work and decisions.
 * Molecule now use custom Docker image in CI/CD by env vars
 * New CICD with needs and optimization
 
+### 2023-11-11: Prepare Host and Boolean
+
+* Prepare host is now called
+* You can install or not with a boolean value
+
 ## Authors
 
 * Lord Robin Crombez
