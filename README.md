@@ -11,14 +11,12 @@
 ## Description
 
 ![Tag: UNIX](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: Ansible](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: Debian](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: Ubuntu](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: Bootstrap](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: Docker](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: docker-compose](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: portainer](https://img.shields.io/badge/Tech-UNIX-orange)
-![Tag: watchtower](https://img.shields.io/badge/Tech-UNIX-orange)
+![Tag: Ansible](https://img.shields.io/badge/Tech-Ansible-orange)
+![Tag: Debian](https://img.shields.io/badge/Tech-Debian-orange)
+![Tag: Docker](https://img.shields.io/badge/Tech-Docker-orange)
+![Tag: docker-compose](https://img.shields.io/badge/Tech-docker--compose-orange)
+![Tag: portainer](https://img.shields.io/badge/Tech-portainer-orange)
+![Tag: watchtower](https://img.shields.io/badge/Tech-watchtower-orange)
 
 An Ansible playbook to install and configure Docker, docker-compose and other tools on a server based on Debian/Ubuntu.
 
