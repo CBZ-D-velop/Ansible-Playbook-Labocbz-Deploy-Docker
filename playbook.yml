@@ -2,7 +2,6 @@
 - name: "Deploy Docker"
   hosts: "{{ tower_env | default([]) }}"
   gather_facts: true
-  strategy: free
   become: true
   become_method: sudo
   become_user: root
