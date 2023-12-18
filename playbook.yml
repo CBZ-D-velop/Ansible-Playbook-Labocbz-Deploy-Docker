@@ -19,10 +19,10 @@
         - name: "Include labocbz.add_certificates"
           tags:
             - "labocbz.add_certificates"
-          loop: "{{ inv_deploy_docker_cert_bundles }}"
+          loop: "{{ inv_docker_cert_bundles }}"
           loop_control:
             loop_var: bundle
-          when: inv_deploy_docker_cert_bundles is defined
+          when: inv_docker_cert_bundles is defined
           vars:
             add_certificates_bundle_name: "{{ bundle.name }}"
             add_certificates_bundle_type: "{{ bundle.type }}"

@@ -121,6 +121,11 @@ Here you can put your change to keep a trace of your work and decisions.
 * Prepare host is now called
 * You can install or not with a boolean value
 
+### 2023-12-18: Prepare Host and Boolean 2
+
+* Prepare host is now called
+* You can install or not with a boolean value
+
 ## Authors
 
 * Lord Robin Crombez
