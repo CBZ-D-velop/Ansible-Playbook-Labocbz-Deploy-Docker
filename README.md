@@ -126,6 +126,12 @@ Here you can put your change to keep a trace of your work and decisions.
 * Prepare host is now called
 * You can install or not with a boolean value
 
+### 2024-03-01: Fix and CI
+
+* Added support for new CI base
+* Edit all vars with __
+* Tested and validated on Docker DIND
+
 ## Authors
 
 * Lord Robin Crombez
