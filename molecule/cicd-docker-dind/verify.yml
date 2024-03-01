@@ -1,8 +1,8 @@
 ---
 # Don't forget to keep this file updated
 # molecule/<scenario>/verify.yml
-- name: "Verify DOCKER"
-  hosts: "local"
+- name: "Verify"
+  hosts: "cicd-docker-dind"
   gather_facts: false
   tasks:
 
